@@ -6,5 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Store extends Model
 {
-    //
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'tiendanube_id', 'access_token',
+    ];
 }

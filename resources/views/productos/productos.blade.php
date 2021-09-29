@@ -4,14 +4,14 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Sincronizacion de productos</div>
+                <div class="card-header h3">Sincronizacion de productos</div>
                 <div class="card-body">
                     @if (session('status'))
                     <div class="alert alert-success" role="alert">
                         {{ session('status') }}
                     </div>
                     @endif
-                    <form class="form-horizontal">
+                    {{-- <form class="form-horizontal">
                         <div class="col-md-3">
                             <div class="form-group">
                                 <label for="">Categorias: </label>
@@ -23,9 +23,11 @@
                                 </select>
                             </div>
                         </div>
-                    </form>
+                    </form> --}}
+                    <p class="h4">Listado de productos donde se encuentran diferencias con Tango Nexo. </p>
+                    <span class="text-secondary">Tipicamente esto sucede cuando se han cambiado los valores luego de la sincronización automática.</span>
 
-                    <table id="productosDT" class="table table-sm table-hover table-inverse ">
+                    <table id="productosDT" class="table table-sm table-hover table-inverse mt-4">
                         <thead>
                             <th>Nombre</th>
                             <th>SKU</th>

@@ -17,6 +17,8 @@ class CreateStoresTable extends Migration
             $table->id();
             $table->integer('tiendanube_id');
             $table->string('access_token');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
